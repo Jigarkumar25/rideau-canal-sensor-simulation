@@ -1,0 +1,20 @@
+{
+  "devices": [
+    {
+      "deviceId": "dows-lake-device",
+      "locationName": "Dows Lake",
+      "connectionString": "HostName=rideauCanalHub123.azure-devices.net;DeviceId=dows-lake-device;SharedAccessKey=b0uNPshZ3SpVuROW6YQdJlwCnTCnhDKrYcw4laXqFKg="
+    },
+    {
+      "deviceId": "fifth-avenue-device",
+      "locationName": "Fifth Avenue",
+      "connectionString": "HostName=rideauCanalHub123.azure-devices.net;DeviceId=fifth-avenue-device;SharedAccessKey=FzvPQlQzTOINhotaCkwvbTPlKV0QMh6cx51hNyAiVcY="
+    },
+    {
+      "deviceId": "nac-device",
+      "locationName": "NAC",
+      "connectionString": "HostName=rideauCanalHub123.azure-devices.net;DeviceId=nac-device;SharedAccessKey=lsiS++oAGSngIhUWidVRxauj8CAV+lUTdc9TNngDeoI="
+    }
+  ],
+  "sendIntervalSeconds": 10
+}
