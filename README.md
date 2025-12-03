@@ -33,7 +33,7 @@ This data is later processed by Azure Stream Analytics and displayed on the live
 
 ## Prerequisites
 
-Before running the simulator, you must have:
+Before running the simulator, we must have:
 
 - Python 3 installed
 - An active Azure IoT Hub
@@ -162,8 +162,7 @@ CONCAT(location, '_', FORMAT(System.Timestamp, 'yyyyMMddHHmmss')) AS id
 **Cause:** Simulator not sending data correctly.  
 **Fix:**
 - Ensure the simulator is running  
-- Verify the device exists in IoT Hub  
-- Check your internet connection  
+- Verify the device exists in IoT Hub   
 
 ---
 
