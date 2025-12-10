@@ -46,7 +46,7 @@ Before running the simulator, we must have:
 ## Installation
 
 ### 1. Clone the Repository
-```bash
+```
 git clone https://github.com/Jigarkumar25/rideau-canal-sensor-simulation.git
 cd rideau-canal-sensor-simulation
 ```
@@ -57,13 +57,16 @@ Install the Azure IoT SDK for Python using `pip`:
 ```bash
 pip install azure-iot-device
 ```
-### Configuration
+
+---
+## Configuration
 
 Open the simulator file (for example: sensor_simulator.py) and update the connection string:
 ```bash
 CONNECTION_STRING = "IoT-Device-Connection-String"
 ```
-### Usage
+---
+## Usage
 
 To start sending live sensor data to Azure IoT Hub:
 ```bash
@@ -78,8 +81,9 @@ To stop the simulator, press:
 ```bash
 CTRL + C
 ```
-### Code Structure
-#### Main Components
+---
+## Code Structure
+### Main Components
 
 sensor_simulator.py<br>
 - The main Python file responsible for generating and sending sensor data to Azure IoT Hub.
@@ -94,7 +98,9 @@ Sends formatted JSON telemetry to Azure IoT Hub using the Azure IoT SDK.
 - main()<br>
 Controls the execution of the program and runs the continuous sending loop.
 
-#### Sensor Data Format
+---
+
+## Sensor Data Format
 JSON Schema
 ```json
 {
@@ -119,7 +125,7 @@ Example Output
 }
 ```
 
-## Simulated Locations
+### Simulated Locations
 
 The simulator sends data for the following Rideau Canal locations:
 
@@ -131,7 +137,7 @@ Each location acts as an independent IoT sensor device.
 
 ---
 
-## Role in the Overall System
+### Role in the Overall System
 
 The sensor simulator is the **data source** for the entire Rideau Canal IoT Monitoring System:
 
@@ -168,7 +174,7 @@ CONCAT(location, '_', FORMAT(System.Timestamp, 'yyyyMMddHHmmss')) AS id
 
 ## AI Tools Disclosure
 
-ChatGPT was used for documentation wording and minor debugging guidance.  
+ChatGPT was used for documentation wording,code guidance and minor debugging guidance.  
 All sensor simulator coding, Azure configuration, testing, and execution were completed manually by me.
 
 ---
@@ -176,7 +182,7 @@ All sensor simulator coding, Azure configuration, testing, and execution were co
 ## References
 
 - Microsoft Azure IoT Hub Python SDK Documentation  
-  https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-python-get-started  
+  https://learn.microsoft.com/en-us/azure/iot-hub  
 
 - Azure IoT Hub Messaging Documentation  
   https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messaging  
